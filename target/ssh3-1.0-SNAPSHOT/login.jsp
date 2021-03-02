@@ -15,11 +15,12 @@
 <body>
 
 <%--下面的login.action中的login,表示struts.xml里的action也叫login--%>
-<s:form action="login" method="POST" >
+<s:form action="login" method="POST" enctype = "multipart/form-data">
     <%--    下面的name和LoginAction中的字段保持一致--%>
     <s:textfield name="user" label="用户名"/>
     <s:password name="user" label="密码"/>
-    <input type="submit" value="登陆">
+    <s:submit value="登陆"></s:submit>
+<%--    <s:input type="submit" value="登陆"/>--%>
 </s:form>
 
 </body>

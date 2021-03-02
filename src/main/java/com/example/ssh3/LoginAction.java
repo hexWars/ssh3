@@ -15,13 +15,7 @@ import java.util.Objects;
  */
 @Data
 public class LoginAction extends ActionSupport {
-    private User user = new User();
-
-    @Override
-    public String execute() throws Exception{
-        System.out.println("111");
-        return login();
-    }
+    private User user;
 
     public User getUser() {
         return user;
@@ -29,6 +23,12 @@ public class LoginAction extends ActionSupport {
 
     public void setUser(User user){
         this.user = user;
+    }
+
+    @Override
+    public String execute() throws Exception{
+        System.out.println("111");
+        return login();
     }
 
     public String login() {
