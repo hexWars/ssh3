@@ -13,13 +13,14 @@ import java.util.Map;
  * @Date 2021-02-26 17:07
  */
 public class UserConverter extends DefaultTypeConverter {
+
     @Override
     public Object convertValue(Map context, Object value, Class toType) {
         //需要将字符串向userbean类型转换时
         if(toType==User.class){
             //系统的请求参数是一个字符串数组
             System.out.println("TestType");
-            String params[] = (String[]) value;
+            String[] params = (String[]) value;
             User user = new User();
             user.setUsername(params[0]);
             user.setPassword(params[1]);
@@ -27,7 +28,7 @@ public class UserConverter extends DefaultTypeConverter {
         }else if(toType==String.class){
             User user = (User) value;
             System.out.println("--------------------");
-            return "<"+user.getUsername()+">";
+            return "<"+user.getUsername()+">"+user.getPassword();
         }
         System.out.println("--------------------");
         return null;

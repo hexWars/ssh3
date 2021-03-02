@@ -2,7 +2,7 @@ package com.example.ssh3;
 
 import com.example.Converter.UserConverter;
 import com.example.domain.User;
-import com.opensymphony.xwork2.Action;
+import com.opensymphony.xwork2.ActionSupport;
 import lombok.Data;
 
 import java.util.Objects;
@@ -13,7 +13,7 @@ import java.util.Objects;
  * @Date 2021-02-25 19:36
  */
 @Data
-public class LoginAction implements Action {
+public class LoginAction extends ActionSupport {
     private User user;
 
     @Override
