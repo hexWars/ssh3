@@ -5,9 +5,9 @@
 
 <struts>
 
-    <constant name="struts.i18n.encoding" value="UTF-8"></constant>
+    <constant name="struts.i18n.encoding" value="UTF-8"/>
     <package name="default" extends="struts-default">
-        <action name="login" class="com.example.ssh3.LoginAction" method="login">
+        <action name="login" class="com.example.ssh3.LoginAction">
             <result name="success">hello.jsp</result>
             <result name="error">login.jsp</result>
         </action>

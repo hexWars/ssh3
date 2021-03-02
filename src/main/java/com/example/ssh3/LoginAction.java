@@ -22,17 +22,15 @@ public class LoginAction implements Action {
         return login();
     }
 
-    public String setUser(){
-        user = new User("aaaaa","bbbbbb");
-
-        return "xxxxx";
+    public void setUser(User user){
+        this.user = user;
     }
 
     public String login() {
         if (Objects.equals(user.getUsername(), "Cai") && Objects.equals(user.getPassword(), "123456")) {
-            return "success";
+            return SUCCESS;
         } else {
-            return "error";
+            return ERROR;
         }
     }
 }

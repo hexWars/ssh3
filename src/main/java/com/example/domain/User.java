@@ -1,6 +1,8 @@
 package com.example.domain;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 /**
  * @Description
@@ -8,16 +10,14 @@ import lombok.Data;
  * @Date 2021-02-26 17:04
  */
 @Data
+@AllArgsConstructor
 public class User {
     private String username;
     private String password;
 
-    public User(String username, String password) {
-        this.username = username;
-        this.password = password;
-    }
-
     public User() {
+        username = "";
+        password = "";
     }
 }
 
