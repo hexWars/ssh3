@@ -4,6 +4,7 @@ import com.example.Converter.UserConverter;
 import com.example.domain.User;
 import com.opensymphony.xwork2.ActionSupport;
 import lombok.Data;
+import sun.net.www.protocol.jar.URLJarFile;
 
 import java.util.Objects;
 
@@ -14,12 +15,16 @@ import java.util.Objects;
  */
 @Data
 public class LoginAction extends ActionSupport {
-    private User user;
+    private User user = new User();
 
     @Override
     public String execute() throws Exception{
         System.out.println("111");
         return login();
+    }
+
+    public User getUser() {
+        return user;
     }
 
     public void setUser(User user){
