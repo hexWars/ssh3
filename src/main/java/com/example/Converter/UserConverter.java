@@ -2,7 +2,6 @@ package com.example.Converter;
 
 import com.example.domain.User;
 import ognl.DefaultTypeConverter;
-import org.apache.struts2.util.StrutsTypeConverter;
 
 import java.util.Map;
 

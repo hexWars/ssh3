@@ -1,10 +1,8 @@
 package com.example.ssh3;
 
-import com.example.Converter.UserConverter;
 import com.example.domain.User;
 import com.opensymphony.xwork2.ActionSupport;
 import lombok.Data;
-import sun.net.www.protocol.jar.URLJarFile;
 
 import java.util.Objects;
 
@@ -13,13 +11,9 @@ import java.util.Objects;
  * @Author Cai
  * @Date 2021-02-25 19:36
  */
-@Data
+
 public class LoginAction extends ActionSupport {
     private User user;
-
-    public User getUser() {
-        return user;
-    }
 
     public void setUser(User user){
         this.user = user;
