@@ -13,7 +13,7 @@
 </head>
 <body>
 <%--<h1>你好, ${username}</h1>--%>
-<h1>你好, <s:property value="user.username"/> </h1>
+<h1>你好, <s:property value="user.username"/></h1>
 </body>
 </html>
 
