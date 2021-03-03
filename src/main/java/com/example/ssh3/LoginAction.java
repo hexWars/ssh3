@@ -29,7 +29,6 @@ public class LoginAction extends ActionSupport {
     public String execute() throws Exception{
         System.out.println("111");
         return login();
-//        return SUCCESS;
     }
 
     public String login() {
@@ -40,5 +39,4 @@ public class LoginAction extends ActionSupport {
         }
     }
 }
-
 

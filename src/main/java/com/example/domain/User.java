@@ -24,14 +24,14 @@ public class User {
         return Objects.equals(username, user.username) && Objects.equals(password, user.password);
     }
 
-//    public User getUser(){
-//        return this;
-//    }
-//
-//    public void setUser(User user){
-//        this.username = user.getUsername();
-//        this.password = user.getPassword();
-//    }
+    public User getUser(){
+        return this;
+    }
+
+    public void setUser(User user){
+        this.username = user.getUsername();
+        this.password = user.getPassword();
+    }
 
     @Override
     public int hashCode() {
